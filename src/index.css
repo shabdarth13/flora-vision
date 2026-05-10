@@ -3,7 +3,6 @@ button:hover,
 a:hover {
   opacity: 0.92;
 }
-
 button:focus,
 a:focus,
 input:focus {
@@ -78,7 +77,6 @@ input:focus {
   .container-main {
     width: min(100% - 28px, 1660px);
   }
-
   .section-gap {
     margin-top: 90px;
   }

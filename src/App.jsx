@@ -6,12 +6,9 @@ import ProductCard from './components/ProductCard'
 import ReviewCard from './components/ReviewCard'
 import BestO2 from './components/BestO2'
 import Footer from './components/Footer'
-
 import { topPlants, reviews } from './data/data'
-
 import trendy1 from './assets/trendy-plant-1.png'
 import trendy2 from './assets/trendy-plant-2.png'
-
 export default function App() {
   return (
     <div className="page-bg">
@@ -22,14 +19,12 @@ export default function App() {
         <main className="container-main pb-28">
           <section id="plants-type" className="pt-4">
             <SectionTitle>Our Trendy plants</SectionTitle>
-
             <TrendCard
               image={trendy1}
               title="For Your Desks Decorations"
               desc="I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!"
               price="Rs. 599/-"
             />
-
             <TrendCard
               image={trendy2}
               title="For Your Desks Decorations"
@@ -40,7 +35,6 @@ export default function App() {
           </section>
         </main>
       </div>
-
       <main className="container-main py-32">
         <section>
           <SectionTitle>Our Top Selling Plants</SectionTitle>
@@ -51,20 +45,16 @@ export default function App() {
             ))}
           </div>
         </section>
-
         <section className="section-gap">
           <SectionTitle>Customer Review</SectionTitle>
-
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             {reviews.map((item) => (
               <ReviewCard key={item.id} item={item} />
             ))}
           </div>
         </section>
-
         <BestO2 />
       </main>
-
       <Footer />
     </div>
   )
