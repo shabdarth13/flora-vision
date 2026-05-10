@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import SectionTitle from './components/SectionTitle'
@@ -56,6 +57,7 @@ export default function App() {
         <BestO2 />
       </main>
       <Footer />
+      <Analytics />
     </div>
   )
 }
