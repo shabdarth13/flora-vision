@@ -1,47 +1,58 @@
 @import "tailwindcss";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+button:hover,
+a:hover {
+  opacity: 0.92;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #1b2316;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-}
-
-button,
-a {
-  transition: all 0.25s ease;
+button:focus,
+a:focus,
+input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.55);
+  outline-offset: 3px;
 }
 
 .page-bg {
   min-height: 100vh;
-  background: #1b2316;
+  background:
+    radial-gradient(circle at 18% 4%, rgba(125, 160, 88, 0.22), transparent 26%),
+    radial-gradient(circle at 90% 24%, rgba(255, 255, 255, 0.08), transparent 22%),
+    #1b2316;
 }
 
 .hero-area {
+  position: relative;
+  overflow: hidden;
   background-image:
-    linear-gradient(180deg, rgba(8, 15, 8, 0.45), rgba(27, 35, 22, 0.86)),
+    linear-gradient(180deg, rgba(7, 14, 7, 0.35), rgba(27, 35, 22, 0.74) 62%, #1b2316 100%),
     url("./assets/hero-bg.png");
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+.hero-area::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.1), transparent 20%),
+    linear-gradient(90deg, rgba(27, 35, 22, 0.08), rgba(27, 35, 22, 0.55));
+}
+
+.hero-area > * {
+  position: relative;
+  z-index: 1;
+}
+
 .glass {
-  background: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 34px 85px rgba(0, 0, 0, 0.34);
 }
 
 .container-main {
@@ -50,7 +61,17 @@ a {
 }
 
 .soft-title {
-  text-shadow: 0 10px 45px rgba(0, 0, 0, 0.38);
+  text-shadow: 0 12px 46px rgba(0, 0, 0, 0.46);
+}
+
+.section-gap {
+  margin-top: 150px;
+}
+
+@media (max-width: 1024px) {
+  .hero-area {
+    background-size: cover;
+  }
 }
 
 @media (max-width: 768px) {
@@ -58,7 +79,7 @@ a {
     width: min(100% - 28px, 1660px);
   }
 
-  .hero-area {
-    background-size: cover;
+  .section-gap {
+    margin-top: 90px;
   }
 }

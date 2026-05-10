@@ -19,8 +19,8 @@ export default function App() {
         <Navbar />
         <Hero />
 
-        <main className="container-main pb-24">
-          <section id="plants-type" className="pt-6">
+        <main className="container-main pb-28">
+          <section id="plants-type" className="pt-4">
             <SectionTitle>Our Trendy plants</SectionTitle>
 
             <TrendCard
@@ -41,7 +41,7 @@ export default function App() {
         </main>
       </div>
 
-      <main className="container-main py-28">
+      <main className="container-main py-32">
         <section>
           <SectionTitle>Our Top Selling Plants</SectionTitle>
 
@@ -52,7 +52,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="mt-36">
+        <section className="section-gap">
           <SectionTitle>Customer Review</SectionTitle>
 
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
