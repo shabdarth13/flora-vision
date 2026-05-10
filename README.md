@@ -1,16 +1,41 @@
-# React + Vite
+# FloraVision 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect responsive plant landing page built using **React.js**, **Vite**, and **Tailwind CSS**, recreated from the provided Figma design.
 
-Currently, two official plugins are available:
+##  Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://flora-vision-red.vercel.app/
 
-## React Compiler
+# Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Pixel-inspired Figma recreation
+- Fully responsive layout
+- Reusable React components
+- Glassmorphism UI design
+- Responsive navigation menu
+- Hover interactions and smooth transitions
+- Mobile, tablet, and desktop support
+- Optimized component structure
+- Vercel deployment
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Tech Stack
+
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript
+- Lucide React Icons
+- Vercel
+
+
+#  Folder Structure
+
+```txt
+src/
+ ├── assets/
+ ├── components/
+ ├── data/
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
